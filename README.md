@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - NFT preview card component solution
 
-## Getting Started
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
+
+### Screenshot
+
+![](./screenshot.jpeg)
+![](./screenshot2.jpeg)
+
+### Links
+
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-next-js-and-typescript-C3QDtfWlyh)
+- Live Site URL: [Vercel](https://nft-preview-card-component-next-type-script.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind](https://tailwindcss.com/) - For styles
+
+### What I learned
+
+- How to give a class to a component based on their parent:
+```jsx
+<div className="relative flex group rounded-lg">
+    <Image className="rounded-lg w-full object-contain md:hidden" src="/image-equilibrium.jpg" width={200} height={250} alt="Image of Equilibrium" />
+    <Image className="rounded-lg w-full object-contain hidden md:block" src="/image-equilibrium.jpg" width={150} height={200} alt="Image of Equilibrium" />
+    <div className="absolute rounded-lg hidden group-hover:block group-hover:cursor-pointer bg-primary-cyan bg-opacity-40 w-full h-full"></div>
+    <ViewIcon />
+</div>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Useful resources
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Styling based on parent state](https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state) - This helped me to create a condition when something happen for a parent, then assign it to the child.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Author
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website - [Muhammad Taufiq Mahdi Personal Portfolio](https://taufiqmahdi-personal-portfolio.vercel.app/)
+- Frontend Mentor - [@taufiqmahdi](https://www.frontendmentor.io/profile/taufiqmahdi)
+- Twitter - [@taufiqmhdi](https://www.twitter.com/taufiqmhdi)
